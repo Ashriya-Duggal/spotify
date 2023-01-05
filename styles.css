@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;600&display=swap");
+body {
+  margin: 0;
+  width: 100%;
+  padding: 0;
+}
+/* ----------navbar--------------- */
+.logo {
+  width: 80px;
+  height: 50px;
+  padding-top: 10px;
+}
+.navbar {
+  background-color: black;
+  font-size: 40px;
+  font-family: "Baloo Paaji 2", cursive;
+}
+.nav {
+  padding-top: 20px;
+  font-size: 25px;
+  font-weight: lighter;
+}
+.nav1 {
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+li {
+  color: aliceblue;
+  padding-left: 20px;
+}
+ul {
+  color: white;
+  font-weight: bolder;
+  font-size: 50px;
+  list-style: none;
+}
+/* ----------main div-container------------ */
+.first-container {
+  width: 70%;
+  border-radius: 20px;
+  background-color: black;
+  margin: auto;
+  background-size: cover;
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.718),
+      rgba(0, 0, 0, 1) 60%
+    ),
+    url("images/music.png");
+}
+
+h3 {
+  padding-left: 10px;
+  color: white;
+  font-size: 40px;
+}
+.song-logo {
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  margin-left: 20px;
+}
+.song-name {
+  color: aliceblue;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 100;
+  font-family: "Baloo Paaji 2", cursive;
+}
+.play {
+  background-image: url(playc.png);
+  height: 3rem;
+  width: 3rem;
+  background-position: center;
+  background-size: cover;
+}
+.time {
+  color: aliceblue;
+  font-family: "Baloo Paaji 2", cursive;
+}
+.song-box {
+  display: flex;
+  width: 64%;
+  justify-content: space-between;
+}
+.wrapper {
+  display: flex;
+}
+/* --------footer--------- */
+.footer {
+  padding-bottom: 1%;
+  width: 100%;
+  /* margin-top: 2%; */
+}
+.f1 {
+  background-color: black;
+  margin-top: 6%;
+}
+#song-info{
+  color: aliceblue;
+  margin-top: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 20px;
+  font-family: "Baloo Paaji 2", cursive;
+}
+#gif{
+  background-image: url("images/gif.gif");
+  background-position: center;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  display: none;
+  margin-right:auto;
+  margin-left: auto;
+}
+.wrap{
+  display: flex;
+  justify-content:left;
+}
+#next {
+  background-image: url(images/next.png);
+  background-position: center;
+  background-size: cover;
+  height: 30px;
+  width: 30px;
+  margin-top: 10px;
+}
+.master-buttons {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#previous {
+  background-image: url(images/previous.png);
+  background-position: center;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+}
+#master {
+  background-image: url(playc.png);
+  background-position: center;
+  background-size: cover;
+  width: 70px;
+  height: 70px;
+}
+#forward {
+  background-image: url(images/next.png);
+  background-position: center;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+}
+/* -------seekbar------------- */
+.slider {
+  width: 60%;
+  height: 15px;
+  margin-top: 30px;
+  margin-left: 20%;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04aa6d;
+  cursor: pointer;
+}
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04aa6d;
+  cursor: pointer;
+}
+
+/* -------------------------- */
+
+@media screen and (max-width: 800px) {
+  .first-container {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .song-name {
+    font-size: 20px;
+  }
+  .navbar {
+    font-size: 10px;
+  }
+  .nav {
+    font-size: 15px;
+  }
+  ul {
+    padding-left: 0;
+  }
+  .song-logo {
+    display: none;
+  }
+  .song-box {
+    width: 90%;
+  }
+}
